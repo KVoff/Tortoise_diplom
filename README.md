@@ -19,7 +19,7 @@ Tortoise ORM — это асинхронная ORM для Python, которая
 1. **Клонировать репозиторий:**
 
    ```bash
-   git clone https://github.com/KVoff/Django_diplom.git
+   git clone https://github.com/KVoff/Tortoise_diplom.git
 
 2. **Создайте и активируйте виртуальное окружение:**
    На Windows:
@@ -38,19 +38,13 @@ Tortoise ORM — это асинхронная ORM для Python, которая
    pip install -r requirements.txt
 
 4. **Настройте базу данных:**
-   Используется SQLite (по умолчанию)
+В данном проекте используется заранее созданная база данных SQlite
+test.db в корневой папке проекта
 
-5. **После этого выполните миграции:**
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-
-6. **Запустите сервер разработки:**
-После этого сервер будет доступен по адресу: http://127.0.0.1:8000/.
-
-
+   
 7. **Запуск тестов:**
    ```bash
-    python manage.py test -v2    
+    pytest test.py
 
--v2 нужен для отображения принтов в тестах
+Результаты тестирования сохраняются в файл test_log.db,
+который находится в корневой папке проекта.
